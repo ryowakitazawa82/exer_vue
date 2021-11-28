@@ -3,6 +3,7 @@ import App from './App.vue';
 import LikeNumber from './LikeNumber.vue';
 
 Vue.config.productionTip = false;
+// グローバルで使いたい場合はこちらにimportして、コンポーネント登録をする
 Vue.component('LikeNumber', LikeNumber)
 
 new Vue({
