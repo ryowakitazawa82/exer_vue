@@ -1,7 +1,9 @@
 <template>
 <div>
-  <LikeHeader></LikeHeader>
-  <h2>{{ number }}</h2>
+  <LikeHeader headerText="hello">
+    <h1>トータルのいいね数</h1>
+    <h2>{{ number }}</h2>
+  </LikeHeader>
   <!-- 子コンポーネントにデータ（props)を渡す -->
   <LikeNumber :total-number="number" @my-click="incrementNumber"></LikeNumber>
   <LikeNumber :total-number="number"></LikeNumber>
