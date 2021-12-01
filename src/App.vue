@@ -1,8 +1,14 @@
 <template>
 <div>
   <LikeHeader headerText="hello">
+    <template v-slot:title>
     <h1>トータルのいいね数</h1>
-    <h2>{{ number }}</h2>
+    </template>
+    <h3>はじめまして</h3>
+    <p>よろしくお願いします</p>
+    <template v-slot:number>
+     <h2>{{ number }}</h2>
+    </template>
   </LikeHeader>
   <!-- 子コンポーネントにデータ（props)を渡す -->
   <LikeNumber :total-number="number" @my-click="incrementNumber"></LikeNumber>
